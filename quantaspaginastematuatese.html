@@ -1,0 +1,243 @@
+<html>
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<title>Quantas páginas tem a tua tese?</title>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>	
+	<style type="text/css">
+
+
+
+		@font-face {
+		  font-family: 'Sansita One';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('Sansita One'), local('SansitaOne'), url(http://themes.googleusercontent.com/static/fonts/sansitaone/v3/r0cFg_5MCCA0Wi4i7AgXWIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+		}
+
+		@font-face {
+		  font-family: 'Alegreya SC';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('Alegreya SC'), local('AlegreyaSC-Regular'), url(http://themes.googleusercontent.com/static/fonts/alegreyasc/v3/-74JUGs8W14C5cCBFRS304bN6UDyHWBl620a-IRfuBk.woff) format('woff');
+		}
+
+		@font-face {
+		  font-family: 'Alegreya';
+		  font-style: normal;
+		  font-weight: 400;
+		  src: local('Alegreya'), local('Alegreya-Regular'), url(http://themes.googleusercontent.com/static/fonts/alegreya/v4/MYFQxfgoxFvFirdbdLj3M_esZW2xOQ-xsNqO47m55DA.woff) format('woff');
+		}
+
+		body{
+        	font-family: 'Alegreya';
+
+		}
+
+		#title{
+        	font-size: 4em;
+		}
+
+
+		#floater {
+			width: 100%;
+			text-align: center;
+			margin-top: 100px;
+		}
+
+		#unit {
+			margin-top: 40px;
+			width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+			position:relative;
+		}
+
+		#boa, #buh {
+		    font-size: 2.5em;
+		    text-align:center;
+		    width: 200px;
+		    margin-top: 100px;
+		    height: 100px;
+		    line-height: 100px;
+		    position: relative;
+		}
+
+		#buh {
+			float:left;
+		}
+		#boa {
+            float: right;
+		}
+
+		a {
+			color: black;
+			text-decoration: none;
+		}
+
+		#circle {
+			position: absolute;
+			width: 100%;
+		}
+
+		#circle svg {
+
+			width: 300px;
+			height: 300px;
+			font-size: 200px;
+
+		}
+		#circle text {
+			fill: white;
+			font-family: 'Sansita One',"Open Sans","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;	
+		}
+
+		.circleLarge {
+			position: absolute;
+			width: 100%;
+			height: 300px;
+			color: white;
+			font-size: 200px;
+			line-height: 300px;
+			background-image: url(imgs/circle.png);
+			background-repeat: no-repeat;
+			background-position: center center;
+			font-family: 'Sansita One',"Open Sans","HelveticaNeue","Helvetica Neue",Helvetica,Arial,sans-serif;	
+
+		}
+
+		.circleSmall {
+			width: 50px;
+			height: 50px;
+			font-size: 25px;
+			font-weight: bolder;
+			line-height: 50px;
+			color: white;
+			font-family: serif;
+			background-image: url(imgs/circle_small.png);
+ 			background-repeat: no-repeat;
+			background-position: center center;
+			display: inline-block;
+
+		}
+
+		#buh .active{
+			background-image: url(imgs/circle_small_red.png);
+		}
+
+		#boa .active{
+			background-image: url(imgs/circle_small_green.png);
+		}
+
+		#msg {
+			font-size: 0.35em;
+			line-height: 1.5em;
+			color: #777777;
+			margin-top: -10px;
+			text-align: center;
+			display: none;
+		}
+		
+		#buh #msg {
+		  margin-right: 20px;
+		}
+		
+		#boa #msg {
+		  margin-left: 20px;
+		}
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+	<div id="floater">
+		<div id="title">
+			Quantas páginas tem a tua tese?
+		</div>
+		<div id="unit">
+			<div class="circleLarge">13</div>
+
+			<div id="buh">
+				<a href="#" onclick="doBuh();">buh</a>
+				<div class="circleSmall">:( </div>
+				<p id="msg"></p>
+			</div> 
+			<div id="boa">
+				<div class="circleSmall">:)</div>				
+				<a href="#" onclick="doBoa();">boa!</a>
+				<p id="msg"></p>
+			</div>		
+
+			<!--div id="circle">
+				<svg
+		     		version="1.1"
+		     		xmlns="http://www.w3.org/2000/svg">
+		     		<g>
+		    		<circle cx="50%" cy="50%" r="50%"/>
+		  			<text x="50%" y="200" text-anchor="middle"> 12 </text>
+		  			</g>
+				</svg>
+			</div-->	
+				
+
+			
+		</unit>
+	</div>
+	<script type="text/javascript">
+	var buhMsgs = [
+		'Buh para ti também',
+		'Não me julgues!',
+		'Mas eu conheço-te de algum lado...?',
+		'Quem nunca pecou que atire a primeira pedra... devagarinho',
+		'Devia ter ido para surfista',
+		'Grão a grão enche a galinha o papo, está bem!?',
+		'Baby steps, baby.',
+		'Obrigadinho',
+		'Roma não se construiu num dia, colega',
+		'Eu sei, eu sei',
+		'Um "boa" por dia, não sabes o bem que me fazia',
+		'Eu sei onde tu moras. Estou só a dizer.',
+		'Calma, faltam as figuras!',
+		'Aposto que estás a pensar que eu teria mais págs se não perdesse tempo nisto',
+		'Buh? Buh tu, xuxu',
+	];
+
+	var boaMsgs = [
+		'Obrigado!',
+		'Isso foi irónico?',
+		'Obrigado, sr. Anónimo.',
+		'A sério que não, mas obrigado na mesma!',
+		'Hoje vou passar menos 5 mins na posição fetal por causa disto',
+		'Nada como a internet para validar as minhas opções de vida, um click de cada vez',
+		'Gosto da tua forma de pensar',
+		'Yay, viva eu',
+		'Iupi!',
+		'Vou pôr o teu nome nos agradecimentos',
+		'Pensarias isso se eu te dissesse que é para entregar em Outubro?',
+		'Sim, mas quantas faltam?',
+		'Não, é ridículo!',
+		''
+
+	];
+	
+	function doBuh() {
+		$("#buh .circleSmall").addClass('active');
+		showRandomMsg(buhMsgs,$('#buh #msg'));
+	}
+
+	function doBoa() {
+		$("#boa .circleSmall").addClass('active');
+		showRandomMsg(boaMsgs,$('#boa #msg'));
+	}
+
+	function showRandomMsg(msgs,el) {
+		el.html(msgs[Math.floor(Math.random()*msgs.length)]);
+		el.slideDown('fast');
+	}
+
+	</script>
+</body>
+</html>
