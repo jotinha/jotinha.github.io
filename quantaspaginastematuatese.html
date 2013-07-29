@@ -278,7 +278,9 @@
 	remote.on('child_added', function(snapshot) {
 		var v = snapshot.val();
 		
-		if (checkIsToday(v.time)) {
+		//just make sure date is valid for now
+		//if (checkIsToday(v.time)) {
+		if (!isNaN(new Date(v.time).getDate())) {
 
 			if (v.which == 'buh') {
 				nVotesBuh += 1;
