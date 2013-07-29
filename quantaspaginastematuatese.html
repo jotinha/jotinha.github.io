@@ -3,6 +3,7 @@
 	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
 	<title>Quantas páginas tem a tua tese?</title>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>	
+	<script src="https://cdn.firebase.com/v0/firebase.js"></script>
 	<style type="text/css">
 
 
@@ -146,10 +147,6 @@
 		}
 
 
-
-
-
-
 	</style>
 </head>
 <body>
@@ -187,6 +184,11 @@
 		</unit>
 	</div>
 	<script type="text/javascript">
+
+	var nVotesBuh = 0;
+	var nVotesBoa = 0;
+	var showVotes = false;
+
 	var buhMsgs = [
 		'Buh para ti também',
 		'Não me julgues!',
@@ -222,22 +224,72 @@
 		''
 
 	];
+
+	function date() {
+		return new Date().getTime();
+	}
 	
 	function doBuh() {
 		$("#buh .circleSmall").addClass('active');
 		showRandomMsg(buhMsgs,$('#buh #msg'));
+		if (remote) {
+			remote.push({which:'buh',time:date()});
+		}
+		showVotes = true;
+		updateNVotes();
 	}
 
 	function doBoa() {
 		$("#boa .circleSmall").addClass('active');
 		showRandomMsg(boaMsgs,$('#boa #msg'));
+		if (remote) {
+			remote.push({which:'boa',time:date()});
+		}
+		showVotes = true;
+		updateNVotes();
 	}
 
 	function showRandomMsg(msgs,el) {
+		el.hide();
 		el.html(msgs[Math.floor(Math.random()*msgs.length)]);
 		el.slideDown('fast');
 	}
 
+	function checkIsToday(time) { 
+		var now = new Date();
+
+		var then = new Date(time);
+
+		return (!isNaN(then.getTime()) &&
+				(then.getFullYear() == now.getFullYear()) && 
+				(then.getMonth() == now.getMonth()) &&
+				(then.getDate() == now.getDate()));
+	}
+
+	function updateNVotes() {
+		if (showVotes) {
+			$('#buh #nvotes').html(nVotesBuh);
+			$('#boa #nvotes').html(nVotesBoa);
+		}
+	}
+
+	var remote = new Firebase('https://jotinha.firebaseio.com/pagstese/votes/');
+
+	remote.on('child_added', function(snapshot) {
+		var v = snapshot.val();
+		
+		if (checkIsToday(v.time)) {
+
+			if (v.which == 'buh') {
+				nVotesBuh += 1;
+
+			} else if (v.which == 'boa') {
+				nVotesBoa += 1;
+			}	
+		}
+		updateNVotes();
+	});
+	
 	</script>
 </body>
 </html>
