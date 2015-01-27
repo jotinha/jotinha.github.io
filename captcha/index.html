@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+  </head>
+  <body>
+  <h1>Uzo.pt captcha solver </h1>
+  <div id="temp">
+    Grabbing new captcha ...
+  </div>
+  
+  <div id="solution-container">
+    <div id="captcha"><img alt="captcha"></img></div>
+    <div id="solution"></div>
+    <button onclick="getNew();">Solve another</button>
+  </div>
+
+  <script type="text/javascript">
+
+  function getNew() {
+    $('#temp').show();
+    $('#solution-container').hide();
+    
+    $.ajax({
+      url: "https://sender.blockspring.com/api_v2/blocks/22924bfd2aa9a5ec339550bb4a40b2e8?api_key=166e5a4317f411bf96ac58d177697dcc",
+      type: "POST",
+      contentType: "application/json",
+      data: JSON.stringify({ }),
+      crossDomain: true
+    }).done(function(response){
+
+      if (response._blockspring_spec && response._errors.length == 0 && response.solution && response.captcha) {
+        
+        $('#temp').hide();
+        $('#solution-container').show();
+
+        $('#solution').text("Guess: " + response.solution);
+        $('img').show().attr("src","data:" + response.captcha['content-type'] + ";base64," + response.captcha.data);
+      }
+    });
+  }
+  
+  getNew();
+  
+  </script>
+
+  </body>
+
+</html>
+
