@@ -1,0 +1,22 @@
+{
+  "name": "João G Sousa page",
+  "version": "0.0.1",
+  "authors": [
+    "João Sousa <dev@jgsousa.com>"
+  ],
+  "description": "Homepage of João G Sousa at jgsousa.com",
+  "license": "MIT",
+  "homepage": "http://jgsousa.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.2",
+    "font-awesome": "~4.0.2"
+  }
+}
