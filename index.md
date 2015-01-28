@@ -1,6 +1,6 @@
 ---
-layout: page
-title: About João
+layout: layout
+title: João G. Sousa
 style : |
   .projects-container img {
     display: inline;
@@ -11,8 +11,10 @@ style : |
     margin-top: 5rem;
   }
 
-
 ---
+<content>
+
+<h1 id="about"><a href="#about">About João</a></h1>
 
 João is a scientist slash hacker who just remembered how strongly he feels that only football players should be allowed to speak of themselves in the third person and will quit now.
 
@@ -57,3 +59,4 @@ Here are some of the things I like to spend my time with
 
   So that this doesn't just look like a paragraph of self aggrandizing drivel I'll add that I'm really bad at the following things: soldering, contact sports, remembering names, and french.
 
+</content>
