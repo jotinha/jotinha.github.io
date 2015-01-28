@@ -1,10 +1,17 @@
-# Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
-baseurl: ""
-url: "http://yourdomain.com"
-
-# Build settings
-markdown: kramdown
-permalink: pretty
+markdown: rdiscount
+pygments: true
+permalink: /posts/:title
+rdiscount:
+  extensions: [smart]
+exclude: [ Gemfile, Gemfile.lock, gems, _assets, bower_components, Gruntfile.js, Procfile.dev, LICENSE, Rakefile, bower.json, package.json ]
+title : João G Sousa
+production_url : http://jgsousa.com
+description: "Homepage of João G. Sousa"
+# disqus_shortname: 
+# analytics: 
+# gauges: 
+author :
+  name : João G. Sousa
+  github : jotinha
+  email: web@jgsousa.com
+  # twitter : 
