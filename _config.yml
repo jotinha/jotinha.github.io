@@ -4,14 +4,14 @@ permalink: /posts/:title
 rdiscount:
   extensions: [smart]
 exclude: [ Gemfile, Gemfile.lock, gems, _assets, bower_components, Gruntfile.js, Procfile.dev, LICENSE, Rakefile, bower.json, package.json ]
-title : João G. Sousa
+title : João Gomes Sousa
 production_url : http://jgsousa.com
-description: "Homepage of João G. Sousa"
+description: "Homepage of João Gomes Sousa"
 # disqus_shortname: 
 # analytics: 
 # gauges: 
 author :
-  name : João G. Sousa
+  name : João Gomes Sousa
   github : jotinha
   email: web@jgsousa.com
   # twitter : 

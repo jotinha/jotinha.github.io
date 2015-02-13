@@ -1,10 +1,10 @@
 {
-  "name": "João G Sousa page",
+  "name": "João Gomes Sousa page",
   "version": "0.0.1",
   "authors": [
-    "João Sousa <dev@jgsousa.com>"
+    "João Gomes Sousa <dev@jgsousa.com>"
   ],
-  "description": "Homepage of João G Sousa at jgsousa.com",
+  "description": "Homepage of João Gomes Sousa at jgsousa.com",
   "license": "MIT",
   "homepage": "http://jgsousa.com",
   "private": true,
