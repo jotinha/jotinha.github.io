@@ -2,10 +2,6 @@ var getFormData = function(form){
   var data = {};
 
   $(form.serializeArray()).each(function() {
-    if (this.name == "msg") {
-      this.value = 
-    }
-
     if (this.name) data[this.name] = this.value;
   });
 
@@ -71,7 +67,7 @@ form.submit(function(event) {
     response = $(response.split('\n')).filter(function() {
       return this.trim().startsWith('{');
     })[0];
-    response = JSON.parse(response)
+    response = JSON.parse(response);
     console.log(response);
     if (response['status'] === "ok") {
       setStatus('success','Mensagem enviada!');
@@ -110,4 +106,4 @@ var setStatus = function(type,msg) {
   }
   stat.find('#status-text').text(msg);
 
-}
+};
