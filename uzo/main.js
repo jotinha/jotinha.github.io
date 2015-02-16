@@ -2,6 +2,10 @@ var getFormData = function(form){
   var data = {};
 
   $(form.serializeArray()).each(function() {
+    if (this.name == "msg") {
+      this.value = 
+    }
+
     if (this.name) data[this.name] = this.value;
   });
 
@@ -57,7 +61,7 @@ form.submit(function(event) {
   btn.button('loading');
 
   $.ajax({
-    url: "https://sender.blockspring.com/api_v2/blocks/b16bf451877edc1d85d1378d2ba37bc0?api_key=166e5a4317f411bf96ac58d177697dcc",
+    url: "https://sender.blockspring.com/api_v2/blocks/b359d003a75ccae54632ee2ad77896b5?api_key=166e5a4317f411bf96ac58d177697dcc",
     type: "POST",
     contentType: "application/json",
     data: JSON.stringify(data),
