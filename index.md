@@ -15,7 +15,7 @@ style : |
 
 João is a scientist slash hacker who just remembered how strongly he feels that only football players should be allowed to speak of themselves in the third person and will quit now.
 
-I'm a physics PhD with a background in statistical physics and I spent the better part of the last 5 years telling a  computer (or a bunch of them) precisely how I wanted the tiny atoms to move around. For the most part, the computers were ok with this which is why I managed to complete [my PhD](#research) last year. I have since taken a break from pure physics and gone to explore the earthly realm of data science. Still, the tiny atoms will always be a part of my heart. And my arm. And my leg. All matter really.
+I'm a physics PhD with a background in statistical physics and I spent the better part of the last 5 years telling a  computer (or a bunch of them) precisely how I wanted the tiny atoms to move around. For the most part, the computers were ok with this which is why I managed to complete my PhD last year. I have since taken a break from pure physics and gone to explore the earthly realm of data science. Still, the tiny atoms will always be a part of my heart. And my arm. And my leg. All matter really.
 
 I really enjoy programming. I love Python, hate that I know Fortran better than my own mother, and happen to think that Javascript is a pretty nice language (heresy, I know). I also think that anyone who has mastered Haskell must have somehow found out the cheat codes to the Universe, but that doesn't stop me from experimenting with it from time to time.
 
