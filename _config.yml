@@ -5,7 +5,7 @@ rdiscount:
   extensions: [smart]
 exclude: [ Gemfile, Gemfile.lock, gems, _assets, bower_components, Gruntfile.js, Procfile.dev, LICENSE, Rakefile, bower.json, package.json, vendor, node_modules]
 title : João Gomes Sousa
-production_url : http://jgsousa.com
+url : http://jgsousa.com
 description: "Homepage of João Gomes Sousa"
 # disqus_shortname: 
 # analytics: 
