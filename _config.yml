@@ -7,7 +7,6 @@ exclude: [ Gemfile, Gemfile.lock, gems, _assets, bower_components, Gruntfile.js,
 title : João Gomes Sousa
 url : http://jgsousa.com
 description: "Homepage of João Gomes Sousa"
-# gauges: 
 author :
   name : João Gomes Sousa
   github : jotinha
