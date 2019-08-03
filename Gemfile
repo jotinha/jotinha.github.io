@@ -1,9 +1,7 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-ruby '2.6.3'
-
-gem 'rake'
-gem 'rmagick'
-gem 'foreman'
-gem 'github-pages', group: :jekyll_plugins
-
+gem "minima", "~> 2.0"
+gem "github-pages", group: :jekyll_plugins
+group :jekyll_plugins do
+  gem "jekyll-feed", "~> 0.6"
+end
