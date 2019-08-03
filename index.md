@@ -1,5 +1,5 @@
 ---
-layout: layout
+layout: default
 title: João Gomes Sousa
 style : |
   .projects-container img {
