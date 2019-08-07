@@ -1,15 +1,10 @@
 ---
-layout: default
+layout: page
 title: "404"
 ---
 
-<section class="content error">
-  <h1>404</h1>
-  <section class="error-text">
-    <p>Oops, this page doesn't exist. Should it? <a id="mailme" href="mailto:{{ site.author.email }}?subject=404%20">Let me know</a>.</p>
-    <p>In the meantime, maybe try going <a href="/">back</a></p>.
-  </section>
-</section>
+<p>Oops, this page doesn't exist. Should it? <a id="mailme" href="mailto:{{ site.author.email }}?subject=404%20">Let me know</a>.</p>
+<p>In the meantime, maybe try going <a href="/">back</a></p>.
 
 <script type="text/javascript">
   document.getElementById("mailme").href += encodeURIComponent(location.href);

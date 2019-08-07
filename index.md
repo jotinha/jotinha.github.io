@@ -1,9 +1,8 @@
 ---
-layout: default
+layout: page
 title: João Gomes Sousa
 ---
 
-## João Gomes Sousa
 
 I'm João. I enjoy computers, data, math. 
 
