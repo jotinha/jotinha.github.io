@@ -3,9 +3,5 @@ layout: page
 title: "404"
 ---
 
-<p>Oops, this page doesn't exist. Should it? <a id="mailme" href="mailto:{{ site.author.email }}?subject=404%20">Let me know</a>.</p>
+<p>Oops, this page doesn't exist. Should it? <a id="mailme" href="mailto:{{ site.author.email }}?subject=404%20 {{ page.url }}">Let me know</a>.</p>
 <p>In the meantime, maybe try going <a href="/">back</a></p>.
-
-<script type="text/javascript">
-  document.getElementById("mailme").href += encodeURIComponent(location.href);
-</script>
