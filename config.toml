@@ -1,0 +1,31 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'João G. Sousa'
+theme = 'cactus'
+
+[params]
+colortheme = 'light'
+description = 'I’m João. I enjoy computers, data, math.'
+projectstitle = 'Hacking'
+
+[[params.social]]
+name = "github"
+link = "https://github.com/jotinha"
+
+[[params.social]]
+name = "email"
+link = "web@jgsousa.com" # no need for "mailto:" at the start
+
+[[params.social]]
+name = "linkedin"
+link = "https://www.linkedin.com/in/jgsousa"
+
+[[menu.main]]
+name = 'Home'
+url = '/'
+weight = 1
+
+[[menu.main]]
+name = 'Posts'
+url = '/posts'
+weight = 2
