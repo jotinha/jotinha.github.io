@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+  <head>
+      <meta charset="utf-8">
+      <title></title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+      <style type="text/css">
+           .shadow {
+            -moz-box-shadow:    30px 30px 20px 6px rgba(25,25,25,25);
+            -webkit-box-shadow: 30px 30px 20px 6px rgba(25,25,25,25);;
+            box-shadow:         30px 30px 20px 6px rgba(25,25,25,25);;
+          }
+
+          .left_col {
+            position: absolute;
+            left: 0;
+            width: 30%;
+            height: 100%;
+          }
+
+          .right_col {
+            position: absolute;
+            right: 0;
+            width: 75%;
+            height: 100%;
+          }
+
+          #container_app {
+            position: relative;
+            width:320px;
+            height: 640px;
+            left:50%;
+            top:50%;
+            margin-left:-180px;
+            margin-top:-320px;
+          }
+
+          #container_portal {
+            position: relative;
+            left: 50%;
+            top: 50%;
+            width: 1000px;
+            height: 800px;
+            margin-left:-500px;
+            margin-top: -400px;
+          }
+
+          img {
+            visibility: hidden;
+          }
+
+          body {
+            background:
+            radial-gradient(black 15%, transparent 16%) 0 0,
+            radial-gradient(black 15%, transparent 16%) 8px 8px,
+            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+            radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+            background-color:#282828;
+            background-size:16px 16px;
+          }
+      
+      </style>
+
+  </head>
+  <body>
+
+  <div class='left_col'>
+    <div id="container_app">
+        <iframe class="shadow" src="http://jgsousa.com/breaking-bed-app" width="360" height="640"></iframe>
+    </div>
+  </div>
+  <div class='right_col'>
+    <div id="container_portal">
+        <iframe class="shadow" src="http://jgsousa.com/breaking-bed-portal" width="1000" height="800"></iframe>
+    </div>
+  </div>
+
+
+  </body>
+</html>
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title></title>
+
+
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+      
+      <style type="text/css"> 
+      .alert {
+        background: none;
+        border: none; 
+      }
+
+      </style>
+  </head>
+  <body>
+
+
+    <div class="container">
+
+    <div class="page-header">
+    <h1> UZO SMS</h1>
+    <p> Envia sms através do <a href="http://www.uzo.pt">uzo.pt</a> com resolução automática dos captchas.</p>
+
+    <p> O código está disponível no <a href="https://github.com/jotinha/uzosms">github</a>. A API com que esta página comunica está <a href="https://api.blockspring.com/jotinha/b359d003a75ccae54632ee2ad77896b5">alojada no blockspring</a>.</p>
+    </div>
+
+    <form id="theform">
+      
+      <div class="row">
+      
+        <div class="form-group col-sm-6">
+          <label for="login">Login</label>
+          <input type="text" class="form-control" id="username" name="username" placeholder="" required>
+        </div>
+
+        <div class="form-group col-sm-6">
+          <label for="password">Password</label>        
+          <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+      
+      </div>
+      
+      <div class="row">
+        <div class="form-group col-sm-6">
+          <label for="destination">Destinatário</label>
+          <input type="text" class="form-control" id="destination" name="destination" placeholder="" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="msg">Mensagem</label>
+        <textarea class="form-control" id="msg" name="msg" rows=4></textarea>
+      </div>
+
+      <div>
+        <button id="enviar" type="submit" class="btn btn-primary" data-loading-text="A enviar..." autocomplete="off">Enviar</button>
+        <span id="status" class="alert" role="alert">
+          <span class="glyphicon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+          <span id="status-text"></span>
+        </span>
+      </div>
+      
+    </form>
+    </div>
+
+  </body>
+
+  <script type="text/javascript" src="main.js"></script>  
+</html>
+
