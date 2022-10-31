@@ -1,0 +1,15 @@
+{
+   "list": [
+      {
+         "name": "swat3.js",
+         "url": "http://www.jgsousa.com/swatthree.js",
+         "desc": "A WebGL map viewer for SWAT3"
+      },
+      {
+         "name": "thrace",
+         "url": "https://github.com/jotinha/thrace",
+         "desc": "An experimental Haskell raytracer"
+      }
+   ]
+}
+
