@@ -1,7 +1,7 @@
 ---
 title: "Example"
 date: 2022-10-31T15:58:51Z
-draft: true
+draft: false
 ---
 
 # Arboris stabantque carbasa caelum rogantem invicti committitur
