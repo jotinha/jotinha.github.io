@@ -27,11 +27,11 @@ If you want to a see an actual complete and very thoroughly documented implement
 
 Don't know Forth? Don't worry, follow this [5 mins tutorial](https://learnxinyminutes.com/docs/forth/) and try it out [online](https://www.tutorialspoint.com/execute_forth_online.php). Another great resource is [Easy Forth](https://skilldrick.github.io/easyforth/#introduction), which comes with an online REPL as well. If you want to go even deeper on the language, [Simple Forth](http://www.murphywong.net/hello/simple.htm) is a classic.
 
-The main thing you notice when you first see Forth code is that it uses [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation). Where in other languages you would write `foo(bar(1 + 2 * 3))`, in Forth you might instead write `1 2 3 * + foo bar`. You'd be forgiven to think that's a crazy way to go about things, and that you have better uses of your time than listening to this nonsense, but this notation has a few advantages:
+The main thing you notice when you first see Forth code is that it uses [Reverse Polish notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation). Where in other languages you would write `foo(bar(1 + 2 * 3))`, in Forth you might instead write `1 2 3 * + foo bar`. You'd be forgiven to think that's a crazy way to go about things, and that you have better uses of your time than listening to this nonsense, but this notation has a few advantages:
 
 * it's trivial to parse, just split on whitespace
 * you don't need to care about operator precedence
-* it's a fun, different, way to think [^1]
+* it's a fun, different, way to think[^1]
 
 [^1]: And really, we should challenge our brains more and our CPUs less.
 
