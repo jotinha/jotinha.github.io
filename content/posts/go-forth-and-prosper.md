@@ -1,7 +1,6 @@
 ---
 title: "Go Forth and Prosper"
-date: 2023-07-06T14:11:01+01:00
-draft: true
+date: 2023-07-06T22:50:00+01:00
 tags: tutorial, forth, go, compilers, languages
 ---
 
