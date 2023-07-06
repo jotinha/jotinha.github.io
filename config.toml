@@ -29,3 +29,6 @@ weight = 1
 name = 'Posts'
 url = '/posts'
 weight = 2
+
+[markup.goldmark.renderer]
+unsafe = true # Allow HTML in md files
