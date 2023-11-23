@@ -50,7 +50,7 @@ $ poetry install
 If you want to switch to a different python environment just use the `poetry env use` command again. You maybe have to reinstall the packages in the new environment, and likely redo the lock file because the compatible versions of your dependencies may change.
 
 ```bash
-$ poetry env 3.11
+$ poetry env use 3.11
 Creating virtualenv my-project-QXbwbAtx-py3.11 in <REDACTED>/pypoetry/virtualenvs
 Using virtualenv: <REDACTED>/pypoetry/virtualenvs/my-project-QXbwbAtx-py3.11
 
