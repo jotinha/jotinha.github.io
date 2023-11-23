@@ -195,7 +195,7 @@ func main() {
 }    
 ```
 
-From now on, when our interpreter encounters a word as it's parsing the Forth code stream, it will look for it in this dictionary. If it finds an entry, it executes the associated code straight away. If it doesn't, it will, against the timeless advice of legendary sci-fi comedy author of the late Douglas Adams, panic.
+From now on, when our interpreter encounters a word as it's parsing the Forth code stream, it will look for it in this dictionary. If it finds an entry, it executes the associated code straight away. If it doesn't find that word, it will, against the timeless advice of beloved sci-fi comedy author Douglas Adams, panic.
 
 ```go
 func exec(instr string) {
